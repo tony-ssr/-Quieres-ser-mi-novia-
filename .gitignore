@@ -157,7 +157,7 @@ MANIFEST
 
 # ===== Archivos Específicos del Proyecto =====
 # Archivos de audio grandes (si se añaden en el futuro)
-*.mp3
+# *.mp3  # Comentado para permitir canciones de Taylor Swift
 *.wav
 *.ogg
 *.m4a
