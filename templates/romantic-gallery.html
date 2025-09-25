@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia de Amor 💕 - Antony & Mariangel</title>
+    
+    <!-- ===== FUENTES DE GOOGLE ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ===== ICONOS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ===== ESTILOS PERSONALIZADOS PREMIUM ===== -->
+    <style>
+        /* ===== VARIABLES CSS PARA CONSISTENCIA ===== */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #ff6b9d, #c44569);
+            --secondary-gradient: linear-gradient(135deg, #667eea, #764ba2);
+            --accent-gradient: linear-gradient(135deg, #ffecd2, #fcb69f);
+            --glass-bg: rgba(255, 255, 255, 0.15);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow-light: 0 8px 32px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 15px 35px rgba(0, 0, 0, 0.15);
+            --shadow-heavy: 0 25px 50px rgba(0, 0, 0, 0.25);
+            --text-primary: #333;
+            --text-secondary: #666;
+            --text-light: rgba(255, 255, 255, 0.9);
+            --border-radius: 20px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ===== RESET Y CONFIGURACIÓN BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 25%, #fecfef 75%, #ff9a9e 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        /* ===== FONDO ANIMADO MEJORADO ===== */
+        .animated-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .heart {
+            position: absolute;
+            color: rgba(255, 182, 193, 0.7);
+            font-size: 20px;
+            animation: float-heart 8s infinite linear;
+            filter: drop-shadow(0 0 10px rgba(255, 182, 193, 0.5));
+        }
+
+        .heart:nth-child(odd) {
+            animation-duration: 10s;
+            color: rgba(255, 107, 157, 0.6);
+        }
+
+        .heart:nth-child(3n) {
+            animation-duration: 12s;
+            color: rgba(196, 69, 105, 0.5);
+        }
+
+        @keyframes float-heart {
+            0% {
+                transform: translateY(100vh) rotate(0deg) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+                transform: translateY(90vh) rotate(36deg) scale(1);
+            }
+            90% {
+                opacity: 1;
+                transform: translateY(-10vh) rotate(324deg) scale(1);
+            }
+            100% {
+                transform: translateY(-20vh) rotate(360deg) scale(0);
+                opacity: 0;
+            }
+        }
+
+        /* ===== PARTÍCULAS BRILLANTES ===== */
+        .sparkles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, #fff, transparent);
+            border-radius: 50%;
+            animation: sparkle 3s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* ===== CONTENEDOR PRINCIPAL ===== */
+        .main-container {
+            position: relative;
+            z-index: 10;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* ===== REPRODUCTOR DE MÚSICA PREMIUM ===== */
+        .music-player {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--glass-border);
+            z-index: 1000;
+            min-width: 380px;
+            max-width: 420px;
+            transition: var(--transition);
+            transform: translateY(0);
+        }
+
+        .music-player:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .player-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .player-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .volume-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .volume-btn:hover {
+            color: #ff6b9d;
+            transform: scale(1.1);
+        }
+
+        .album-art {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            animation: rotate 20s linear infinite paused;
+        }
+
+        .album-art.playing {
+            animation-play-state: running;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .music-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .song-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .song-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 5px;
+        }
+
+        .song-artist {
+            font-size: 13px;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .music-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .control-btn {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 16px;
+        }
+
+        .control-btn:hover {
+            transform: scale(1.1);
+            background: var(--primary-gradient);
+            color: white;
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+        }
+
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            background: var(--primary-gradient);
+            color: white;
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+        }
+
+        .play-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 12px 30px rgba(255, 107, 157, 0.5);
+        }
+
+        .progress-container {
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 107, 157, 0.2);
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress {
+            height: 100%;
+            background: var(--primary-gradient);
+            width: 0%;
+            transition: width 0.1s ease;
+            border-radius: 3px;
+            position: relative;
+        }
+
+        .progress::after {
+            content: '';
+            position: absolute;
+            right: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .progress-bar:hover .progress::after {
+            opacity: 1;
+        }
+
+        .time-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .playlist-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 14px;
+            transition: var(--transition);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .playlist-toggle:hover {
+            color: #ff6b9d;
+            background: rgba(255, 107, 157, 0.1);
+        }
+
+        /* ===== HEADER PRINCIPAL MEJORADO ===== */
+        .header {
+            text-align: center;
+            margin-bottom: 80px;
+            padding-top: 120px;
+            position: relative;
+        }
+
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            color: var(--text-light);
+            font-weight: 300;
+            animation: fadeInUp 1s ease-out 0.3s both;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== SECCIONES MEJORADAS ===== */
+        .section {
+            margin-bottom: 100px;
+            animation: fadeInUp 1s ease-out;
+            position: relative;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            color: #fff;
+            text-align: center;
+            margin-bottom: 60px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 600;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--primary-gradient);
+            border-radius: 2px;
+        }
+
+        /* ===== GALERÍA DE FOTOS PREMIUM ===== */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .photo-item {
+            position: relative;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+            transition: var(--transition);
+            cursor: pointer;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .photo-item:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .photo-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+
+        .photo-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 30px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .photo-item:hover .photo-overlay {
+            transform: translateY(0);
+        }
+
+        .photo-overlay p {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        /* ===== SECCIÓN DE PERSONAJES PREMIUM ===== */
+        .characters-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+
+        .character-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .character-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+        }
+
+        .character-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .character-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 25px;
+            border: 4px solid transparent;
+            background: var(--primary-gradient);
+            padding: 4px;
+            box-shadow: 0 15px 35px rgba(255, 107, 157, 0.3);
+            transition: var(--transition);
+        }
+
+        .character-card:hover .character-image {
+            transform: scale(1.1);
+            box-shadow: 0 20px 40px rgba(255, 107, 157, 0.4);
+        }
+
+        .character-name {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: #ff6b9d;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .character-description {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* ===== CARTA DE AMOR PREMIUM ===== */
+        .love-letter {
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 50px;
+            margin: 60px auto;
+            max-width: 900px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--glass-border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .love-letter::before {
+            content: '💕';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5rem;
+            background: white;
+            padding: 0 15px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .love-letter::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent-gradient);
+        }
+
+        .letter-content {
+            font-size: 1.15rem;
+            line-height: 2;
+            color: var(--text-primary);
+            text-align: justify;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .letter-content p {
+            margin-bottom: 25px;
+            text-indent: 2em;
+        }
+
+        .letter-content p:first-child {
+            text-indent: 0;
+            font-weight: 500;
+        }
+
+        .letter-signature {
+            text-align: right;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: #ff6b9d;
+            margin-top: 40px;
+            font-weight: 600;
+        }
+
+        /* ===== BOTONES PREMIUM ===== */
+        .btn-container {
+            text-align: center;
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--primary-gradient);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255, 107, 157, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-secondary {
+            background: var(--secondary-gradient);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        /* ===== MODAL PREMIUM ===== */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(15px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 900px;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            animation: slideIn 0.3s ease;
+        }
+
+        .modal-image {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 20px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: #fff;
+            font-size: 45px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 2001;
+        }
+
+        .close:hover {
+            color: #ff6b9d;
+            transform: scale(1.1);
+        }
+
+        /* ===== ANIMACIONES ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-50%) scale(0.8);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(-50%) scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* ===== RESPONSIVE DESIGN MEJORADO ===== */
+        @media (max-width: 1024px) {
+            .music-player {
+                min-width: 320px;
+                max-width: 360px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .music-player {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin-bottom: 40px;
+                width: 100%;
+                max-width: none;
+                padding: 20px;
+            }
+
+            .header {
+                padding-top: 40px;
+            }
+
+            .photo-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .characters-section {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .character-card {
+                padding: 30px;
+            }
+
+            .love-letter {
+                padding: 30px;
+                margin: 40px 20px;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .photo-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .photo-item img {
+                height: 280px;
+            }
+
+            .love-letter {
+                padding: 25px;
+            }
+
+            .letter-content {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+
+            .main-title {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* ===== EFECTOS ESPECIALES ===== */
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px rgba(255, 107, 157, 0.5);
+            }
+            to {
+                text-shadow: 0 0 30px rgba(255, 107, 157, 0.8);
+            }
+        }
+
+        /* ===== SCROLLBAR PERSONALIZADA ===== */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-gradient);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #c44569, #ff6b9d);
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== FONDO ANIMADO MEJORADO ===== -->
+    <div class="animated-background">
+        <div class="floating-hearts" id="floating-hearts"></div>
+        <div class="sparkles" id="sparkles"></div>
+    </div>
+
+    <!-- ===== CONTENEDOR PRINCIPAL ===== -->
+    <div class="main-container">
+        
+        <!-- ===== REPRODUCTOR DE MÚSICA PREMIUM ===== -->
+        <div class="music-player">
+            <div class="player-header">
+                <h3 class="player-title">Para ti, mi amor 🎵</h3>
+                <div class="volume-control">
+                    <button class="volume-btn" id="volumeBtn" title="Silenciar/Activar">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="music-info">
+                <img src="../content/songs/Taylor Swift - Lover.png" alt="Album Art" class="album-art" id="albumArt">
+                <div class="song-details">
+                    <div class="song-title" id="songTitle">Taylor Swift - Lover</div>
+                    <div class="song-artist" id="songArtist">Nuestra canción especial 💕</div>
+                </div>
+            </div>
+            
+            <div class="music-controls">
+                <button class="control-btn" id="shuffleBtn" title="Aleatorio">
+                    <i class="fas fa-random"></i>
+                </button>
+                <button class="control-btn" id="prevBtn" title="Canción anterior">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="control-btn play-btn" id="playBtn" title="Reproducir/Pausar">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="nextBtn" title="Siguiente canción">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <button class="control-btn" id="repeatBtn" title="Repetir">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="time-info">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+            
+            <!-- Audio element oculto -->
+            <audio id="audioPlayer" preload="metadata"></audio>
+        </div>
+
+        <!-- ===== HEADER PRINCIPAL ===== -->
+        <header class="header">
+            <h1 class="main-title glow">Nuestra Historia de Amor</h1>
+            <p class="subtitle">Un viaje romántico a través de nuestros momentos más especiales, acompañado de la música que define nuestro amor 💕</p>
+        </header>
+
+        <!-- ===== SECCIÓN: NUESTRAS FOTOS JUNTOS ===== -->
+        <section class="section">
+            <h2 class="section-title">Nuestros Momentos Especiales 📸</h2>
+            <div class="photo-gallery" id="couplePhotos">
+                <!-- Las fotos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN: NUESTROS PERSONAJES ===== -->
+        <section class="section">
+            <h2 class="section-title">Nuestros Personajes del Alma 🎭</h2>
+            <div class="characters-section">
+                <!-- Mariangel - My Melody -->
+                <div class="character-card">
+                    <img src="../content/images/myMelody/1-.jpg" alt="My Melody - Mariangel" class="character-image">
+                    <h3 class="character-name">Mariangel - My Melody</h3>
+                    <p class="character-description">
+                        Dulce, tierna y llena de amor como My Melody. Tu personalidad refleja la pureza 
+                        y la bondad de este adorable personaje. Eres mi conejita especial que llena 
+                        mi mundo de ternura y felicidad infinita. Tu sonrisa ilumina cada día de mi vida. 🐰💕
+                    </p>
+                </div>
+                
+                <!-- Antony - Pompompurin -->
+                <div class="character-card">
+                    <img src="../content/images/pompompurin/1-.jpg" alt="Pompompurin - Antony" class="character-image">
+                    <h3 class="character-name">Antony - Pompompurin</h3>
+                    <p class="character-description">
+                        Relajado, cariñoso y siempre dispuesto a cuidarte como Pompompurin. 
+                        Mi personalidad tranquila y protectora se refleja en este tierno perrito. 
+                        Soy tu compañero fiel que siempre estará a tu lado, en las buenas y en las malas. 🐶💛
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN: CARTA DE AMOR ===== -->
+        <section class="section">
+            <h2 class="section-title">Carta de mi Corazón 💌</h2>
+            <div class="love-letter">
+                <div class="letter-content" id="letterContent">
+                    <!-- El contenido de la carta se cargará aquí -->
+                </div>
+                <div class="letter-signature">
+                    Con todo el cariño de mi corazón,<br>
+                    Antony Salcedo 💕
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BOTONES DE NAVEGACIÓN ===== -->
+        <div class="btn-container">
+            <a href="../index.html" class="btn btn-secondary">
+                <i class="fas fa-home"></i> Volver al Inicio
+            </a>
+            <a href="main-proposal.html" class="btn">
+                <i class="fas fa-heart"></i> Ver Propuesta
+            </a>
+        </div>
+    </div>
+
+    <!-- ===== MODAL PARA VER FOTOS EN GRANDE ===== -->
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="Foto ampliada">
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT MEJORADO PARA FUNCIONALIDAD PREMIUM ===== -->
+    <script>
+        // ===== CONFIGURACIÓN DE DATOS ACTUALIZADA ===== //
+        
+        /**
+         * Lista de canciones disponibles en el reproductor (corregida con archivos reales)
+         * Cada canción incluye título, artista, archivo de audio, imagen y descripción romántica
+         */
+        const playlist = [
+            {
+                title: "Lover",
+                artist: "Taylor Swift",
+                file: "../content/songs/Taylor Swift - Lover.mp3",
+                image: "../content/songs/Taylor Swift - Lover.png",
+                description: "Nuestra canción especial 💕"
+            },
+            {
+                title: "Enchanted",
+                artist: "Taylor Swift",
+                file: "../content/songs/Taylor Swift - Enchanted.mp3",
+                image: "../content/songs/Taylor Swift - Enchanted.png",
+                description: "Encantado de conocerte 🌟"
+            },
+            {
+                title: "Delicate",
+                artist: "Taylor Swift",
+                file: "../content/songs/Taylor Swift - Delicate.mp3",
+                image: "../content/songs/Taylor Swift - Delicate.png",
+                description: "Momentos delicados juntos 🌸"
+            },
+            {
+                title: "New Years Day",
+                artist: "Taylor Swift",
+                file: "../content/songs/Taylor Swift - New Years Day.mp3",
+                image: "../content/songs/Taylor Swift - New Years Day.png",
+                description: "Comenzando el año contigo 🎊"
+            },
+            {
+                title: "Invisible String",
+                artist: "Taylor Swift",
+                file: "../content/songs/Taylor Swift - invisible string.mp3",
+                image: "../content/songs/Taylor Swift - invisible string.png",
+                description: "Unidos por hilos invisibles 🧵"
+            }
+        ];
+
+        /**
+         * Lista de fotos de la pareja para la galería con descripciones más románticas
+         */
+        const couplePhotos = [
+            { src: "../content/images/She and me/1.jpg", caption: "El momento en que supe que eras especial 💕" },
+            { src: "../content/images/She and me/2.jpg", caption: "Tu sonrisa que ilumina mi universo ☀️" },
+            { src: "../content/images/She and me/3.jpg", caption: "Aventuras que se vuelven recuerdos eternos 🌟" },
+            { src: "../content/images/She and me/4.jpg", caption: "En tus ojos encontré mi hogar 😍" },
+            { src: "../content/images/She and me/5.jpg", caption: "Cada risa compartida es un tesoro 🎉" },
+            { src: "../content/images/She and me/6.jpg", caption: "Nuestro amor capturado en el tiempo 📸" },
+            { src: "../content/images/She and me/7.jpg", caption: "Construyendo sueños juntos, paso a paso 💫" },
+            { src: "../content/images/She and me/8.jpg", caption: "Tu sonrisa es mi debilidad favorita 😊" },
+            { src: "../content/images/She and me/9.jpg", caption: "Contigo, cada día es una celebración 🌈" },
+            { src: "../content/images/She and me/10.jpg", caption: "Amor verdadero en su forma más pura 💖" },
+            { src: "../content/images/She and me/11.jpg", caption: "Juntos somos imparables 💪" },
+            { src: "../content/images/She and me/12.jpg", caption: "Eres la musa de todos mis sueños 🎨" },
+            { src: "../content/images/She and me/13.jpg", caption: "Momentos que guardo en lo más profundo de mi corazón 💝" },
+            { src: "../content/images/She and me/14.jpg", caption: "Nuestro futuro brillante nos espera 🔮" },
+            { src: "../content/images/She and me/15.jpg", caption: "Mi persona favorita en todo el mundo 👫" },
+            { src: "../content/images/She and me/16.jpg", caption: "Un amor que trasciende el tiempo y el espacio ⏰" },
+            { src: "../content/images/She and me/17.jpg", caption: "Mi corazón late solo por ti 💗" },
+            { src: "../content/images/She and me/18.jpg", caption: "Para siempre y un día más 🔒" },
+            { src: "../content/images/She and me/19.jpg", caption: "Nuestro amor eterno florecerá por siempre 🌹" }
+        ];
+
+        // ===== VARIABLES GLOBALES DEL REPRODUCTOR MEJORADO ===== //
+        let currentSongIndex = 0;
+        let isPlaying = false;
+        let isShuffle = false;
+        let isRepeat = false;
+        let isMuted = false;
+        let volume = 1;
+        
+        // Elementos del DOM
+        let audioPlayer, playBtn, prevBtn, nextBtn, shuffleBtn, repeatBtn, volumeBtn;
+        let songTitle, songArtist, albumArt;
+        let progressBar, progress, currentTime, duration;
+
+        // ===== INICIALIZACIÓN MEJORADA ===== //
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMusicPlayer();
+            loadPhotoGallery();
+            loadLoveLetter();
+            createAnimatedBackground();
+            setupModalFunctionality();
+            initializeScrollAnimations();
+        });
+
+        /**
+         * Inicializa el reproductor de música con funcionalidades avanzadas
+         */
+        function initializeMusicPlayer() {
+            // Obtener elementos del DOM
+            audioPlayer = document.getElementById('audioPlayer');
+            playBtn = document.getElementById('playBtn');
+            prevBtn = document.getElementById('prevBtn');
+            nextBtn = document.getElementById('nextBtn');
+            shuffleBtn = document.getElementById('shuffleBtn');
+            repeatBtn = document.getElementById('repeatBtn');
+            volumeBtn = document.getElementById('volumeBtn');
+            songTitle = document.getElementById('songTitle');
+            songArtist = document.getElementById('songArtist');
+            albumArt = document.getElementById('albumArt');
+            progressBar = document.getElementById('progressBar');
+            progress = document.getElementById('progress');
+            currentTime = document.getElementById('currentTime');
+            duration = document.getElementById('duration');
+
+            // Configurar volumen inicial
+            audioPlayer.volume = volume;
+
+            // Cargar la primera canción
+            loadSong(currentSongIndex);
+
+            // Event listeners para los controles
+            playBtn.addEventListener('click', togglePlayPause);
+            prevBtn.addEventListener('click', previousSong);
+            nextBtn.addEventListener('click', nextSong);
+            shuffleBtn.addEventListener('click', toggleShuffle);
+            repeatBtn.addEventListener('click', toggleRepeat);
+            volumeBtn.addEventListener('click', toggleMute);
+
+            // Event listeners del audio
+            audioPlayer.addEventListener('timeupdate', updateProgress);
+            audioPlayer.addEventListener('loadedmetadata', updateDuration);
+            audioPlayer.addEventListener('ended', handleSongEnd);
+            audioPlayer.addEventListener('loadstart', showLoading);
+            audioPlayer.addEventListener('canplay', hideLoading);
+        }
+
+        /**
+         * Carga una canción específica en el reproductor con efectos visuales
+         * @param {number} index - Índice de la canción en la playlist
+         */
+        function loadSong(index) {
+            const song = playlist[index];
+            
+            // Animación de transición
+            albumArt.style.opacity = '0.5';
+            
+            setTimeout(() => {
+                audioPlayer.src = song.file;
+                songTitle.textContent = `${song.artist} - ${song.title}`;
+                songArtist.textContent = song.description;
+                albumArt.src = song.image;
+                albumArt.style.opacity = '1';
+            }, 200);
+        }
+
+        /**
+         * Alterna entre reproducir y pausar con efectos visuales mejorados
+         */
+        function togglePlayPause() {
+            if (isPlaying) {
+                audioPlayer.pause();
+                playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                albumArt.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                audioPlayer.play().then(() => {
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    albumArt.classList.add('playing');
+                    isPlaying = true;
+                }).catch(error => {
+                    console.error('Error al reproducir:', error);
+                    showNotification('Error al reproducir la canción', 'error');
+                });
+            }
+        }
+
+        /**
+         * Reproduce la canción anterior con lógica de shuffle
+         */
+        function previousSong() {
+            if (isShuffle) {
+                currentSongIndex = Math.floor(Math.random() * playlist.length);
+            } else {
+                currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+            }
+            
+            loadSong(currentSongIndex);
+            if (isPlaying) {
+                setTimeout(() => audioPlayer.play(), 300);
+            }
+        }
+
+        /**
+         * Reproduce la siguiente canción con lógica de shuffle
+         */
+        function nextSong() {
+            if (isShuffle) {
+                currentSongIndex = Math.floor(Math.random() * playlist.length);
+            } else {
+                currentSongIndex = (currentSongIndex + 1) % playlist.length;
+            }
+            
+            loadSong(currentSongIndex);
+            if (isPlaying) {
+                setTimeout(() => audioPlayer.play(), 300);
+            }
+        }
+
+        /**
+         * Maneja el final de una canción según el modo de repetición
+         */
+        function handleSongEnd() {
+            if (isRepeat) {
+                audioPlayer.currentTime = 0;
+                audioPlayer.play();
+            } else {
+                nextSong();
+            }
+        }
+
+        /**
+         * Alterna el modo aleatorio
+         */
+        function toggleShuffle() {
+            isShuffle = !isShuffle;
+            shuffleBtn.style.color = isShuffle ? '#ff6b9d' : '';
+            shuffleBtn.style.background = isShuffle ? 'rgba(255, 107, 157, 0.2)' : '';
+            showNotification(isShuffle ? 'Modo aleatorio activado' : 'Modo aleatorio desactivado');
+        }
+
+        /**
+         * Alterna el modo de repetición
+         */
+        function toggleRepeat() {
+            isRepeat = !isRepeat;
+            repeatBtn.style.color = isRepeat ? '#ff6b9d' : '';
+            repeatBtn.style.background = isRepeat ? 'rgba(255, 107, 157, 0.2)' : '';
+            showNotification(isRepeat ? 'Repetición activada' : 'Repetición desactivada');
+        }
+
+        /**
+         * Alterna el silenciado del audio
+         */
+        function toggleMute() {
+            isMuted = !isMuted;
+            audioPlayer.muted = isMuted;
+            volumeBtn.innerHTML = isMuted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+        }
+
+        /**
+         * Actualiza la barra de progreso con efectos suaves
+         */
+        function updateProgress() {
+            // Solo actualizar si el audio está cargado y reproduciéndose normalmente
+            if (audioPlayer.duration && !isNaN(audioPlayer.duration) && audioPlayer.duration > 0) {
+                const progressPercent = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+                
+                // Evitar actualizaciones bruscas o valores inválidos
+                if (progressPercent >= 0 && progressPercent <= 100) {
+                    progress.style.width = `${progressPercent}%`;
+                    currentTime.textContent = formatTime(audioPlayer.currentTime);
+                }
+            }
+        }
+
+        /**
+         * Actualiza la duración total de la canción
+         */
+        function updateDuration() {
+            duration.textContent = formatTime(audioPlayer.duration);
+        }
+
+        /**
+         * Formatea el tiempo en formato MM:SS
+         * @param {number} time - Tiempo en segundos
+         * @returns {string} Tiempo formateado
+         */
+        function formatTime(time) {
+            if (isNaN(time)) return '0:00';
+            const minutes = Math.floor(time / 60);
+            const seconds = Math.floor(time % 60);
+            return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        /**
+         * Muestra indicador de carga
+         */
+        function showLoading() {
+            songArtist.textContent = 'Cargando...';
+        }
+
+        /**
+         * Oculta indicador de carga
+         */
+        function hideLoading() {
+            const song = playlist[currentSongIndex];
+            songArtist.textContent = song.description;
+        }
+
+        /**
+         * Carga dinámicamente la galería de fotos con efectos mejorados
+         */
+        function loadPhotoGallery() {
+            const gallery = document.getElementById('couplePhotos');
+            
+            couplePhotos.forEach((photo, index) => {
+                const photoItem = document.createElement('div');
+                photoItem.className = 'photo-item';
+                photoItem.style.animationDelay = `${index * 0.1}s`;
+                photoItem.innerHTML = `
+                    <img src="${photo.src}" alt="Foto ${index + 1}" loading="lazy">
+                    <div class="photo-overlay">
+                        <p>${photo.caption}</p>
+                    </div>
+                `;
+                
+                // Agregar evento para abrir modal
+                photoItem.addEventListener('click', () => openPhotoModal(photo.src, photo.caption));
+                
+                gallery.appendChild(photoItem);
+            });
+        }
+
+        /**
+         * Carga el contenido de la carta de amor con efectos de escritura
+         */
+        async function loadLoveLetter() {
+            try {
+                const response = await fetch('../content/carta/carta noviazgo.txt');
+                const letterText = await response.text();
+                
+                const letterContent = document.getElementById('letterContent');
+                
+                // Dividir el texto en párrafos y formatear
+                const paragraphs = letterText.split('\n\n').filter(p => p.trim());
+                letterContent.innerHTML = paragraphs.map(p => `<p>${p.trim()}</p>`).join('');
+                
+                // Efecto de escritura
+                animateLetterWriting();
+                
+            } catch (error) {
+                console.error('Error al cargar la carta:', error);
+                document.getElementById('letterContent').innerHTML = `
+                    <p>Mi querida Mariangel,</p>
+                    <p>Cada día que pasa me doy cuenta de lo afortunado que soy de tenerte en mi vida. 
+                    Tu sonrisa ilumina mis días más oscuros y tu amor me da la fuerza para ser mejor persona cada día.</p>
+                    <p>Quiero caminar contigo por el resto de mi vida, crear nuevos recuerdos inolvidables y 
+                    construir juntos nuestros sueños más hermosos. ¿Quieres ser mi novia y mi compañera de vida?</p>
+                `;
+                animateLetterWriting();
+            }
+        }
+
+        /**
+         * Anima la escritura de la carta
+         */
+        function animateLetterWriting() {
+            const letterContent = document.getElementById('letterContent');
+            const paragraphs = letterContent.querySelectorAll('p');
+            
+            paragraphs.forEach((p, index) => {
+                p.style.opacity = '0';
+                p.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    p.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    p.style.opacity = '1';
+                    p.style.transform = 'translateY(0)';
+                }, index * 500);
+            });
+        }
+
+        /**
+         * Crea el fondo animado mejorado con corazones y partículas
+         */
+        function createAnimatedBackground() {
+            const heartsContainer = document.getElementById('floating-hearts');
+            const sparklesContainer = document.getElementById('sparkles');
+            
+            // Crear corazones flotantes
+            setInterval(() => {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = ['💕', '💖', '💗', '💝'][Math.floor(Math.random() * 4)];
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+                heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
+                
+                heartsContainer.appendChild(heart);
+                
+                setTimeout(() => {
+                    if (heart.parentNode) {
+                        heart.parentNode.removeChild(heart);
+                    }
+                }, 12000);
+            }, 1500);
+
+            // Crear partículas brillantes
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    const sparkle = document.createElement('div');
+                    sparkle.className = 'sparkle';
+                    sparkle.style.left = Math.random() * 100 + '%';
+                    sparkle.style.top = Math.random() * 100 + '%';
+                    sparkle.style.animationDelay = Math.random() * 3 + 's';
+                    
+                    sparklesContainer.appendChild(sparkle);
+                }, i * 200);
+            }
+        }
+
+        /**
+         * Configura la funcionalidad del modal con efectos mejorados
+         */
+        function setupModalFunctionality() {
+            const modal = document.getElementById('photoModal');
+            const closeBtn = modal.querySelector('.close');
+            
+            closeBtn.addEventListener('click', closePhotoModal);
+            
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closePhotoModal();
+                }
+            });
+            
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closePhotoModal();
+                }
+            });
+        }
+
+        /**
+         * Abre el modal con una foto específica y efectos mejorados
+         * @param {string} src - URL de la imagen
+         * @param {string} caption - Descripción de la imagen
+         */
+        function openPhotoModal(src, caption) {
+            const modal = document.getElementById('photoModal');
+            const modalImage = document.getElementById('modalImage');
+            
+            modalImage.src = src;
+            modalImage.alt = caption;
+            modal.style.display = 'block';
+            
+            document.body.style.overflow = 'hidden';
+            
+            // Efecto de zoom suave
+            setTimeout(() => {
+                modalImage.style.transform = 'scale(1)';
+            }, 100);
+        }
+
+        /**
+         * Cierra el modal de fotos con efectos suaves
+         */
+        function closePhotoModal() {
+            const modal = document.getElementById('photoModal');
+            const modalImage = document.getElementById('modalImage');
+            
+            modalImage.style.transform = 'scale(0.8)';
+            
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 200);
+        }
+
+        /**
+         * Inicializa las animaciones de scroll
+         */
+        function initializeScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observar todas las secciones
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(50px)';
+                section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(section);
+            });
+        }
+
+        /**
+         * Muestra notificaciones elegantes
+         * @param {string} message - Mensaje a mostrar
+         * @param {string} type - Tipo de notificación (success, error, info)
+         */
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(20px);
+                padding: 15px 25px;
+                border-radius: 50px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                z-index: 3000;
+                font-weight: 500;
+                color: #333;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                animation: slideDown 0.3s ease;
+            `;
+            
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideUp 0.3s ease forwards';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 2000);
+        }
+
+        // ===== EFECTOS ADICIONALES MEJORADOS ===== //
+        
+        /**
+         * Efecto parallax mejorado
+         */
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.header');
+            const speed = scrolled * 0.3;
+            
+            if (parallax) {
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+            
+            // Efecto en el reproductor de música
+            const musicPlayer = document.querySelector('.music-player');
+            if (musicPlayer && window.innerWidth > 768) {
+                const playerOffset = Math.min(scrolled * 0.1, 20);
+                musicPlayer.style.transform = `translateY(${playerOffset}px)`;
+            }
+        });
+
+        // Agregar estilos de animación dinámicamente
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateX(-50%) translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(-50%) translateY(0);
+                }
+            }
+            
+            @keyframes slideUp {
+                from {
+                    opacity: 1;
+                    transform: translateX(-50%) translateY(0);
+                }
+                to {
+                    opacity: 0;
+                    transform: translateX(-50%) translateY(-20px);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

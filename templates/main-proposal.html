@@ -92,6 +92,32 @@
                 transform: scale(1.1);
             }
         }
+        
+        /* ===== ESTILOS PARA CONTENEDOR DE BOTONES ===== */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-top: 30px;
+        }
+        
+        .btn-gallery {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn-gallery:hover {
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+            transform: translateY(-3px);
+        }
+        
+        @media (min-width: 768px) {
+            .btn-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -113,8 +139,13 @@
             <em>Aquí es donde continuará nuestra aventura romántica...</em>
         </p>
         
-        <!-- Botón para volver o continuar -->
-        <a href="../index.html" class="btn">Volver al inicio 💕</a>
+        <!-- Botones para navegación -->
+        <div class="btn-container">
+            <a href="romantic-gallery.html" class="btn btn-gallery">
+                <i class="fas fa-heart"></i> Ver Nuestra Historia de Amor 📸
+            </a>
+            <a href="../index.html" class="btn">Volver al inicio 💕</a>
+        </div>
     </div>
     
     <script>
