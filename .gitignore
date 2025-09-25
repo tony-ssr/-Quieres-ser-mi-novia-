@@ -1,0 +1,213 @@
+# ===================================
+# 💕 .gitignore para Propuesta Romántica
+# ===================================
+
+# ===== Archivos del Sistema =====
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== Editores e IDEs =====
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===== Logs y Temporales =====
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Archivos temporales
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# ===== Node.js (si se usa en el futuro) =====
+# Dependencias
+node_modules/
+jspm_packages/
+
+# Archivos de configuración opcionales
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+
+# ===== Python (si se usa servidor local) =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ===== Archivos de Backup =====
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# ===== Archivos de Configuración Local =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===== Archivos de Build/Dist =====
+/build
+/dist
+/public/build
+
+# ===== Archivos de Testing =====
+/coverage
+/.nyc_output
+
+# ===== Archivos Específicos del Proyecto =====
+# Archivos de audio grandes (si se añaden en el futuro)
+*.mp3
+*.wav
+*.ogg
+*.m4a
+*.flac
+
+# Archivos de video grandes
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+
+# Archivos de imagen muy grandes (mantener las actuales)
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+# *.tiff
+# *.webp
+
+# ===== Archivos de Documentación Temporal =====
+# Borradores y notas personales
+drafts/
+notes/
+*.draft
+*.notes
+
+# ===== Archivos de Servidor Local =====
+# Archivos de servidor de desarrollo
+.serve/
+server.log
+
+# ===== Archivos de Git =====
+# Ignorar archivos de merge
+*.orig
+
+# ===== Comentarios Especiales =====
+# 💝 NOTA: Este .gitignore está diseñado para mantener
+#    el repositorio limpio y enfocado en los archivos
+#    esenciales para la propuesta romántica.
+#
+# 🌟 Si añades nuevos tipos de archivos al proyecto,
+#    asegúrate de actualizar este .gitignore según sea necesario.
+#
+# 💕 ¡Que este proyecto traiga mucha felicidad!
+
+# ===== Archivos Personales (Opcional) =====
+# Descomenta estas líneas si quieres mantener algunos archivos privados
+# personal/
+# private/
+# secrets/

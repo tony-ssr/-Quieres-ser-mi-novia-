@@ -1,0 +1,438 @@
+/* ===== ESTILOS GENERALES Y RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración del body con gradiente romántico de fondo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    min-height: 100vh;
+    overflow: hidden; /* Evita scroll durante las animaciones */
+    position: relative;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== FONDO ANIMADO DE CORAZONES ===== */
+.hearts-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* No interfiere con los clicks */
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Estilos para los corazones flotantes que se generan dinámicamente */
+.floating-heart {
+    position: absolute;
+    font-size: 20px;
+    color: rgba(255, 182, 193, 0.7);
+    animation: floatUp 4s linear infinite;
+    pointer-events: none;
+}
+
+/* Animación de corazones flotando hacia arriba */
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ===== CONTENEDOR DE CONTENIDO CENTRAL ===== */
+.content-wrapper {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Efecto de cristal esmerilado */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== IMAGEN DE PERSONAJES ===== */
+.character-image {
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-out;
+}
+
+.characters-img {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en la imagen */
+.characters-img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+.main-question {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #d63384;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-out 0.5s both;
+}
+
+/* ===== SUBTÍTULO ===== */
+.subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+    font-weight: 300;
+    animation: fadeInUp 1s ease-out 0.7s both;
+}
+
+/* ===== CONTENEDOR DE BOTONES ===== */
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 60px; /* Espacio mínimo para evitar saltos de layout */
+}
+
+/* ===== ESTILOS BASE PARA BOTONES ===== */
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    min-width: 120px;
+    position: relative;
+    z-index: 3;
+}
+
+/* ===== BOTÓN "SÍ" ===== */
+.btn-yes {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    color: white;
+    animation: fadeInLeft 1s ease-out 1s both;
+}
+
+.btn-yes:hover {
+    background: linear-gradient(45deg, #ff5252, #ff7979);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Efecto de pulso para el botón "Sí" */
+.btn-yes:focus {
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* ===== BOTÓN "NO" ===== */
+.btn-no {
+    background: linear-gradient(45deg, #74b9ff, #a29bfe);
+    color: white;
+    animation: fadeInRight 1s ease-out 1s both;
+    transition: all 0.3s ease, transform 0.5s ease;
+}
+
+.btn-no:hover {
+    background: linear-gradient(45deg, #0984e3, #6c5ce7);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(116, 185, 255, 0.4);
+}
+
+/* Clase para animar el movimiento del botón "No" */
+.btn-no.moving {
+    position: absolute;
+    animation: moveAround 0.5s ease-in-out;
+}
+
+/* ===== MODAL/VENTANA EMERGENTE ===== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Estado activo del modal */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+/* ===== ESTILOS DEL MODAL ===== */
+.modal-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #d63384;
+    margin-bottom: 15px;
+    animation: bounceIn 0.8s ease-out 0.3s both;
+}
+
+.modal-message {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+/* Contenedor de corazones animados en el modal */
+.modal-hearts {
+    margin: 20px 0;
+    animation: fadeInUp 0.8s ease-out 0.7s both;
+}
+
+.modal-hearts .heart {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 10px;
+    animation: heartBeat 1.5s ease-in-out infinite;
+}
+
+/* Retraso escalonado para cada corazón */
+.modal-hearts .heart:nth-child(1) { animation-delay: 0s; }
+.modal-hearts .heart:nth-child(2) { animation-delay: 0.2s; }
+.modal-hearts .heart:nth-child(3) { animation-delay: 0.4s; }
+.modal-hearts .heart:nth-child(4) { animation-delay: 0.6s; }
+
+.redirect-message {
+    font-size: 1rem;
+    color: #28a745;
+    font-style: italic;
+    animation: fadeInUp 0.8s ease-out 0.9s both;
+}
+
+/* ===== ANIMACIONES PERSONALIZADAS ===== */
+
+/* Animación de entrada rebotando */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animación de desvanecimiento desde arriba */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de desvanecimiento desde abajo */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de desvanecimiento desde la izquierda */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación de desvanecimiento desde la derecha */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación de pulso para botones */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animación de latido para corazones */
+@keyframes heartBeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Animación de movimiento aleatorio para el botón "No" */
+@keyframes moveAround {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(100px) translateY(-50px) rotate(10deg);
+    }
+    50% {
+        transform: translateX(-80px) translateY(30px) rotate(-10deg);
+    }
+    75% {
+        transform: translateX(60px) translateY(-80px) rotate(5deg);
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .main-question {
+        font-size: 2.5rem;
+    }
+    
+    .content-wrapper {
+        padding: 30px 20px;
+    }
+    
+    .characters-img {
+        width: 120px;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        min-width: 100px;
+    }
+    
+    .buttons-container {
+        gap: 15px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .main-question {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .content-wrapper {
+        padding: 25px 15px;
+    }
+    
+    .characters-img {
+        width: 100px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        min-width: 90px;
+    }
+    
+    .buttons-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .modal-content {
+        padding: 30px 20px;
+    }
+    
+    .modal-title {
+        font-size: 2rem;
+    }
+    
+    .modal-message {
+        font-size: 1.1rem;
+    }
+}

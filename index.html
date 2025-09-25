@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi novia? - Para Mariangel 💕</title>
+    <link rel="stylesheet" href="statics/css/main.css">
+    <!-- Fuentes de Google Fonts para un diseño romántico -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor principal de la página -->
+    <div class="main-container">
+        <!-- Fondo con partículas animadas de corazones -->
+        <div class="hearts-background" id="heartsBackground"></div>
+        
+        <!-- Contenedor central con la pregunta y botones -->
+        <div class="content-wrapper">
+            <!-- Imagen de PomPom y My Melody como elemento decorativo -->
+            <div class="character-image">
+                <img src="content/images/pompom and my melody/PomPomPurim and My Melody.png" 
+                     alt="PomPom y My Melody" 
+                     class="characters-img">
+            </div>
+            
+            <!-- Título principal con la pregunta -->
+            <h1 class="main-question">¿Quieres ser mi novia?</h1>
+            
+            <!-- Subtítulo romántico -->
+            <p class="subtitle">Mi querida Mariangel, esta pregunta viene del corazón 💕</p>
+            
+            <!-- Contenedor de botones con posicionamiento relativo para el movimiento -->
+            <div class="buttons-container" id="buttonsContainer">
+                <!-- Botón "Sí" - siempre en posición fija -->
+                <button class="btn btn-yes" id="yesBtn">
+                    Sí 💖
+                </button>
+                
+                <!-- Botón "No" - se moverá cuando sea clickeado -->
+                <button class="btn btn-no" id="noBtn">
+                    No 😔
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal/Ventana emergente que aparece al seleccionar "Sí" -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <!-- Mensaje de confirmación -->
+            <h2 class="modal-title">¡Lo sabía! 😍</h2>
+            <p class="modal-message">Sabía que dirías que sí, mi amor 💕</p>
+            
+            <!-- Animación de corazones en el modal -->
+            <div class="modal-hearts">
+                <span class="heart">💖</span>
+                <span class="heart">💕</span>
+                <span class="heart">💝</span>
+                <span class="heart">💗</span>
+            </div>
+            
+            <!-- Mensaje de redirección -->
+            <p class="redirect-message">Preparando algo especial para ti...</p>
+        </div>
+    </div>
+
+    <!-- Script principal con toda la lógica interactiva -->
+    <script src="statics/js/main.js"></script>
+</body>
+</html>
