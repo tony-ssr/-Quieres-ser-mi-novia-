@@ -558,7 +558,7 @@
         }
 
         .love-letter::before {
-            content: '💕';
+            content: '💌';
             position: absolute;
             top: -15px;
             left: 50%;
@@ -587,6 +587,177 @@
             text-align: justify;
             margin-bottom: 40px;
             font-weight: 400;
+        }
+
+        /* Estilos mejorados para la carta */
+        .letter-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .letter-greeting {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin: 0;
+            font-style: italic;
+        }
+
+        .letter-body {
+            margin-bottom: 30px;
+        }
+
+        .letter-paragraph {
+            margin-bottom: 25px;
+            text-indent: 2em;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .letter-paragraph:first-child {
+            text-indent: 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(255, 182, 193, 0.3) 0%, rgba(255, 105, 180, 0.3) 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .special-paragraph {
+            background: linear-gradient(135deg, rgba(255, 182, 193, 0.1) 0%, rgba(255, 105, 180, 0.1) 100%);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid var(--accent-color);
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .heart-icon {
+            font-size: 1.2rem;
+            animation: heartPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes heartPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .memories-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 20px;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 182, 193, 0.3);
+        }
+
+        .memories-title {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            text-indent: 0 !important;
+        }
+
+        .sparkle {
+            animation: sparkleRotate 3s linear infinite;
+        }
+
+        @keyframes sparkleRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .memory-item {
+            background: rgba(255, 182, 193, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 3px solid var(--accent-color);
+            text-indent: 0 !important;
+        }
+
+        .emotional-paragraph {
+            font-style: italic;
+            background: linear-gradient(135deg, rgba(255, 182, 193, 0.08) 0%, rgba(255, 105, 180, 0.08) 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+
+        .important-paragraph {
+            font-weight: 500;
+            font-size: 1.15rem;
+            color: var(--accent-color);
+            text-align: center;
+            padding: 25px;
+            background: rgba(255, 182, 193, 0.1);
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 2px solid rgba(255, 182, 193, 0.3);
+        }
+
+        .confession {
+            text-align: center;
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin: 30px 0;
+            text-indent: 0 !important;
+        }
+
+        .letter-conclusion {
+            border-top: 2px solid var(--accent-color);
+            padding-top: 30px;
+            margin-top: 40px;
+        }
+
+        .final-words {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .proposal-question {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(255, 182, 193, 0.15) 0%, rgba(255, 105, 180, 0.15) 100%);
+            border-radius: 20px;
+            border: 2px solid var(--accent-color);
+            margin: 20px 0;
+        }
+
+        .question-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .main-question {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .heart-beat {
+            animation: heartBeat 1.5s ease-in-out infinite;
+            font-size: 1.3rem;
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1.2); }
+            75% { transform: scale(1.1); }
         }
 
         .letter-content p {
@@ -716,6 +887,43 @@
         .close:hover {
             color: #ff6b9d;
             transform: scale(1.1);
+        }
+
+        /* ===== BOTÓN FLOTANTE SUBIR ===== */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-gradient);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: var(--shadow-medium);
+            transition: var(--transition);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .scroll-to-top:hover {
+            background: linear-gradient(135deg, #ff5a8a, #b83d5e);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .scroll-to-top:active {
+            transform: translateY(-2px);
         }
 
         /* ===== ANIMACIONES ===== */
@@ -1055,25 +1263,25 @@
          * Lista de fotos de la pareja para la galería con descripciones más románticas
          */
         const couplePhotos = [
-            { src: "../content/images/She and me/1.jpg", caption: "El momento en que supe que eras especial 💕" },
-            { src: "../content/images/She and me/2.jpg", caption: "Tu sonrisa que ilumina mi universo ☀️" },
-            { src: "../content/images/She and me/3.jpg", caption: "Aventuras que se vuelven recuerdos eternos 🌟" },
-            { src: "../content/images/She and me/4.jpg", caption: "En tus ojos encontré mi hogar 😍" },
-            { src: "../content/images/She and me/5.jpg", caption: "Cada risa compartida es un tesoro 🎉" },
-            { src: "../content/images/She and me/6.jpg", caption: "Nuestro amor capturado en el tiempo 📸" },
-            { src: "../content/images/She and me/7.jpg", caption: "Construyendo sueños juntos, paso a paso 💫" },
-            { src: "../content/images/She and me/8.jpg", caption: "Tu sonrisa es mi debilidad favorita 😊" },
-            { src: "../content/images/She and me/9.jpg", caption: "Contigo, cada día es una celebración 🌈" },
-            { src: "../content/images/She and me/10.jpg", caption: "Amor verdadero en su forma más pura 💖" },
-            { src: "../content/images/She and me/11.jpg", caption: "Juntos somos imparables 💪" },
-            { src: "../content/images/She and me/12.jpg", caption: "Eres la musa de todos mis sueños 🎨" },
-            { src: "../content/images/She and me/13.jpg", caption: "Momentos que guardo en lo más profundo de mi corazón 💝" },
-            { src: "../content/images/She and me/14.jpg", caption: "Nuestro futuro brillante nos espera 🔮" },
-            { src: "../content/images/She and me/15.jpg", caption: "Mi persona favorita en todo el mundo 👫" },
-            { src: "../content/images/She and me/16.jpg", caption: "Un amor que trasciende el tiempo y el espacio ⏰" },
-            { src: "../content/images/She and me/17.jpg", caption: "Mi corazón late solo por ti 💗" },
-            { src: "../content/images/She and me/18.jpg", caption: "Para siempre y un día más 🔒" },
-            { src: "../content/images/She and me/19.jpg", caption: "Nuestro amor eterno florecerá por siempre 🌹" }
+            { src: "../content/images/She and me/1.jpg", caption: "El momento en que fuimos al onomastico 💕" },
+            { src: "../content/images/She and me/2.jpg", caption: "De cuando compartimos nuestra primera fiesta juntos ☀️" },
+            { src: "../content/images/She and me/3.jpg", caption: "Cuando estuviste en mi cumpleaños 🌟" },
+            { src: "../content/images/She and me/4.jpg", caption: "Recopilacion de esa fiesta increible contigo 😍" },
+            { src: "../content/images/She and me/5.jpg", caption: "Acurrupachaditos juntos 🎉" },
+            { src: "../content/images/She and me/6.jpg", caption: "Tu conmigo y yo concentrado en ya no se jdkshak 📸" },
+            { src: "../content/images/She and me/7.jpg", caption: "La primera fotico juntos 💫" },
+            { src: "../content/images/She and me/8.jpg", caption: "Me siento muy feliz estando contigo 😊" },
+            { src: "../content/images/She and me/9.jpg", caption: "En la siesta con la bebe y yo sobre mi bebe 🌈" },
+            { src: "../content/images/She and me/10.jpg", caption: "Fotopose con el sombrero que se perdio 💖" },
+            { src: "../content/images/She and me/11.jpg", caption: "De las mejores fotos en asensor 💪" },
+            { src: "../content/images/She and me/12.jpg", caption: "Apachurraditos con el bebe cachorrito pequeño 🎨" },
+            { src: "../content/images/She and me/13.jpg", caption: "Foto legendaria en asensor solo contigo 💝" },
+            { src: "../content/images/She and me/14.jpg", caption: "Que se repita la salida de peliculas 🔮" },
+            { src: "../content/images/She and me/15.jpg", caption: "Mi niña y el bebe, que vuelvan a Chichiwas 👫" },
+            { src: "../content/images/She and me/16.jpg", caption: "Mas besitos asi en foticos por favor ⏰" },
+            { src: "../content/images/She and me/17.jpg", caption: "Jsjhdkshda mas foticos random tambien 💗" },
+            { src: "../content/images/She and me/18.jpg", caption: "Para siempre pegaditos listos para la mimicion 🔒" },
+            { src: "../content/images/She and me/19.jpg", caption: "Contigo quiero vivir muchas cosas mas 🌹" }
         ];
 
         // ===== VARIABLES GLOBALES DEL REPRODUCTOR MEJORADO ===== //
@@ -1097,6 +1305,7 @@
             createAnimatedBackground();
             setupModalFunctionality();
             initializeScrollAnimations();
+            initializeScrollToTop();
         });
 
         /**
@@ -1331,31 +1540,113 @@
         /**
          * Carga el contenido de la carta de amor con efectos de escritura
          */
-        async function loadLoveLetter() {
-            try {
-                const response = await fetch('../content/carta/carta noviazgo.txt');
-                const letterText = await response.text();
+        function loadLoveLetter() {
+            const letterContent = document.getElementById('letterContent');
+            
+            // Contenido de la carta embebido con formato mejorado
+            const letterHTML = `
+                <div class="letter-header">
+                    <p class="letter-greeting"> </p>
+                    <p class="letter-greeting">Mi Mangel, mi amor, mi preciosa,</p>
+                </div>
                 
-                const letterContent = document.getElementById('letterContent');
+                <div class="letter-body">
+                    <p class="letter-paragraph">
+                        Te escribo estas palabras que se han estado acumulando en mi mente y mi corazón desde hace un tiempo, 
+                        palabras que siento que ya no pueden quedarse solo en pensamientos fugaces.
+                    </p>
+                    
+                    <p class="letter-paragraph">
+                        Sé perfectamente que cuando todo esto empezó, fui yo quien marcó una línea clara. Te dije con honestidad 
+                        que no buscaba nada serio, que sentía que en mi vida no había espacio para algo más. Pero lo que no anticipé, 
+                        lo que no vi venir, <span class="highlight">fuiste tú</span>. Y con esa misma sinceridad, debo admitir que 
+                        <span class="highlight">lo cambiaste todo</span>.
+                    </p>
+                    
+                    <p class="letter-paragraph">
+                        No fue un solo día, sino una hermosa acumulación de momentos, de sensaciones. Conocerte ha sido de las cosas 
+                        más bonitas que me han pasado este año. Aún recuerdo esa primera conversación, cuando te llamé 
+                        <em>"criaturita del señor"</em> y bromeabas diciendo que no eras Mangel. Desde ese instante, sentí una 
+                        conexión extraña y maravillosa, una facilidad para hablar de cualquier tontería o de lo que de verdad nos preocupa.
+                    </p>
+                    
+                    <p class="letter-paragraph special-paragraph">
+                        <span class="heart-icon">💕</span>
+                        Me encanta todo de ti. Me gusta cuando te digo que eres la mujer más tierna, bonita y "pechocha", 
+                        y aunque a veces juegues a que no, sé que te gusta escucharlo. Admiro tu inteligencia y la pasión 
+                        con la que hablas de tu carrera, ese deseo tuyo de no salvar el mundo, pero sí la vida de algunas personas.
+                        <span class="heart-icon">💕</span>
+                    </p>
+                    
+                    <p class="letter-paragraph">
+                        He llegado a conocer a la Mangel que se queda dormida a media llamada, la que hiberna como una osita 
+                        y a la que le tengo que recordar que coma bien porque se le olvida. He visto a la Mangel que se estresa 
+                        por sus trabajos pero que al final siempre saca un 5, la que se enoja porque sus compañeras no hicieron 
+                        bien las diapositivas y la que me pide ayuda con las normas APA o para hacer una página web.
+                    </p>
+                    
+                    <div class="memories-section">
+                        <p class="letter-paragraph memories-title">
+                            <span class="sparkle">✨</span> Nuestros momentos especiales <span class="sparkle">✨</span>
+                        </p>
+                        <p class="letter-paragraph memory-item">
+                            🌧️ Ese primer beso bajo la lluvia en la plaza, un instante tan romántico que pareció sacado de una película
+                        </p>
+                        <p class="letter-paragraph memory-item">
+                            📚 Las veces que me has acompañado en mis días largos y llenos de exámenes, dándome ánimos
+                        </p>
+                        <p class="letter-paragraph memory-item">
+                            🍳 Cuando me cocinaste por primera vez, un recuerdo que atesoro porque la comida hecha con cariño tiene un sabor especial
+                        </p>
+                    </div>
+                    
+                    <p class="letter-paragraph emotional-paragraph">
+                        Estar contigo se siente como estar en casa. Me siento tan cómodo que puedo ser yo mismo, 
+                        con mis bromas tontas, mi amor por el anime, mis momentos de estrés y hasta mis silencios. 
+                        Has visto partes de mí que no muchos conocen, y lejos de asustarte, te has acercado más.
+                    </p>
+                    
+                    <p class="letter-paragraph">
+                        Sin darme cuenta, empecé a querer más. Más de nuestras conversaciones que duran hasta la madrugada, 
+                        más de tu risa que es contagiosa, más de tu forma de ver el mundo que me enseña tanto, 
+                        y más de esa paz que siento cuando estamos juntos.
+                    </p>
+                    
+                    <p class="letter-paragraph important-paragraph">
+                        Lo que teníamos al principio ya no es suficiente para describir todo lo que siento ahora. 
+                        Ya no me conformo con decir que "estamos hablando" o que "estamos pasando el tiempo". 
+                        Para mí, esto es mucho más. <span class="highlight">Tú te has convertido en una persona 
+                        absolutamente importante en mi vida</span>, y la idea de que no estés o que esto cambie me da pánico.
+                    </p>
+                    
+                    <p class="letter-paragraph confession">
+                        <strong>Me gustas mucho, Mangel.</strong>
+                    </p>
+                </div>
                 
-                // Dividir el texto en párrafos y formatear
-                const paragraphs = letterText.split('\n\n').filter(p => p.trim());
-                letterContent.innerHTML = paragraphs.map(p => `<p>${p.trim()}</p>`).join('');
-                
-                // Efecto de escritura
-                animateLetterWriting();
-                
-            } catch (error) {
-                console.error('Error al cargar la carta:', error);
-                document.getElementById('letterContent').innerHTML = `
-                    <p>Mi querida Mariangel,</p>
-                    <p>Cada día que pasa me doy cuenta de lo afortunado que soy de tenerte en mi vida. 
-                    Tu sonrisa ilumina mis días más oscuros y tu amor me da la fuerza para ser mejor persona cada día.</p>
-                    <p>Quiero caminar contigo por el resto de mi vida, crear nuevos recuerdos inolvidables y 
-                    construir juntos nuestros sueños más hermosos. ¿Quieres ser mi novia y mi compañera de vida?</p>
-                `;
-                animateLetterWriting();
-            }
+                <div class="letter-conclusion">
+                    <p class="letter-paragraph final-words">
+                        Por todo esto, por cada risa, cada abrazo, cada momento compartido y cada sueño que hemos empezado a construir, 
+                        quiero dar el siguiente paso.
+                    </p>
+                    
+                    <div class="proposal-question">
+                        <p class="question-text">
+                            Así que, mi preciosa Mangel, mi niña bonita, la mujer que con su sola existencia cambió mi mundo,
+                        </p>
+                        <p class="main-question">
+                            <span class="heart-beat">💖</span>
+                            <strong>¿Quieres ser mi novia?</strong>
+                            <span class="heart-beat">💖</span>
+                        </p>
+                    </div>
+                </div>
+            `;
+            
+            letterContent.innerHTML = letterHTML;
+            
+            // Efecto de escritura mejorado
+            animateLetterWriting();
         }
 
         /**
@@ -1504,6 +1795,30 @@
         }
 
         /**
+         * Inicializa el botón de subir al inicio
+         */
+        function initializeScrollToTop() {
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            
+            // Mostrar/ocultar botón según el scroll
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+            
+            // Funcionalidad de scroll suave al hacer clic
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        /**
          * Muestra notificaciones elegantes
          * @param {string} message - Mensaje a mostrar
          * @param {string} type - Tipo de notificación (success, error, info)
@@ -1589,5 +1904,11 @@
         `;
         document.head.appendChild(style);
     </script>
+
+    <!-- ===== BOTÓN FLOTANTE SUBIR ===== -->
+    <button class="scroll-to-top" id="scrollToTop" title="Subir al inicio">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
 </body>
 </html>
